@@ -47,7 +47,7 @@ const Profile = () =>{
             </div>
         </div>
         <div className="gallery">
-            {pic.map(item =>{
+            {pic && pic.length && pic.map(item =>{
                 return (
                     <img className="item" src={item.photo} alt={item.title} key={item.title}/>
                 )
